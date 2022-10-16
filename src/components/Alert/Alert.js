@@ -1,17 +1,10 @@
-import React from 'react';
-
+import React from "react";
 import { StyledAlert } from "./Alert.styled";
 
-const Alert = (props) => {
-  return (
-    <>
-      {["primary"].map((variant) => (
-        <StyledAlert key={variant} variant={variant}>
-          {props.children}
-        </StyledAlert>
-      ))}
-    </>
-  );
-};
+const Alert = ({ variant, children }) => (
+  <StyledAlert key={variant} variant={variant}>
+    {children}
+  </StyledAlert>
+);
 
 export default Alert;

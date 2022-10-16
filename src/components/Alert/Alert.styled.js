@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 const DefaultStyledAlert = styled.div`
   position: relative;
@@ -11,21 +11,8 @@ const DefaultStyledAlert = styled.div`
   border: 1px solid #d3d6d8;
 `;
 
-const variants = {
-  primary: css`
-    color: #004085;
-    background-color: #cce5ff;
-    border: 1px solid #b8daff;
-  `,
-  secondary: css`
-    color: #842029;
-    background-color: #f8d7da;
-    border: 1px solid #f5c2c7;
-  `,
-};
-
 const StyledAlert = styled(DefaultStyledAlert)(
-  ({ variant }) => variants[variant]
+  ({ theme, variant }) => theme.alert[variant]
 );
 
 export { StyledAlert };
