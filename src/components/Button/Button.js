@@ -5,4 +5,9 @@ export const Button = ({ children }) => {
   return <StyledButton>{children}</StyledButton>;
 };
 
+Button.defaultProps = {
+  active: false,
+  disabled: false,
+};
+
 export default Button;
