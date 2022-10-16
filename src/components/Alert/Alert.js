@@ -1,24 +1,15 @@
 import React from 'react';
 
-import { StyledAlert } from './Alert.styled';
-import { ThemeProvider } from "styled-components";
-
-const theme = {
-  color: "#004085",
-  backgroundColor: "#cce5ff",
-  borderColor: "#b8daff",
-};
+import { StyledAlert } from "./Alert.styled";
 
 const Alert = (props) => {
   return (
     <>
-      <ThemeProvider theme={theme}>
-        {["primary"].map((variant) => (
-          <StyledAlert key={variant} variant={variant}>
-            {props.children}
-          </StyledAlert>
-        ))}
-      </ThemeProvider>
+      {["primary"].map((variant) => (
+        <StyledAlert key={variant} variant={variant}>
+          {props.children}
+        </StyledAlert>
+      ))}
     </>
   );
 };
