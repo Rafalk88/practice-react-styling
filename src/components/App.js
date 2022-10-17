@@ -21,6 +21,27 @@ const theme = {
       border: 1px solid #f5c2c7;
     `,
   },
+  button: {
+    primary: css`
+      color: #fff;
+      background-color: #007bff;
+      border-color: 1px solid #007bff;
+    `,
+    success: css`
+      color: #fff;
+      background-color: #28a745;
+      border-color: 1px solid #28a745;
+    `,
+    size: {
+      sl: css``,
+      md: css``,
+      lg: css`
+        padding: 0.5rem 1rem;
+        font-size: 1.25rem;
+        border-radius: 0.3rem;
+      `,
+    },
+  },
 };
 
 const App = () => {
