@@ -17,7 +17,11 @@ const Task03 = () => {
         </RBBreadcrumb>
       </Col>
       <Col>
-        <Breadcrumb />
+        <Breadcrumb>
+          <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
+          <Breadcrumb.Item href="#">Library</Breadcrumb.Item>
+          <Breadcrumb.Item active>Data</Breadcrumb.Item>
+        </Breadcrumb>
       </Col>
     </Row>
   );
